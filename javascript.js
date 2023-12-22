@@ -1,1 +1,1 @@
-alert ("Victor Perdue Website")
+console.log("Hello, World!")
