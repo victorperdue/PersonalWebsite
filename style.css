@@ -6,10 +6,12 @@ html {
 
 /* Navigation Styles */
 nav {
+    position: fixed;
+    bottom: 0;
     display: flex;
-    justify-content: center; /* Centers the nav items horizontally */
+    justify-content: left; /* Centers the nav items horizontally */
     align-items: center; /* Centers the nav items vertically */
-    background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
+    background-color: rgba(51, 51, 51, 0); /* fully background */
 }
 
 nav ul {
@@ -39,9 +41,18 @@ header {
     color: rgb(13, 113, 10);
 }
 
+.spin-button{
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Transition for smoother animation */
+  }
+
 /* Heading Styles */
 h1 {
-    border-style: dotted;
+    border-style: groove;
     text-align: center;
     font-size: 2em;
 }
