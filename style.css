@@ -1,38 +1,90 @@
-a:hover {
-    color: red; /* Color change when hovered */
+/* General Styles */
+html {
+    background-color: #ADD8E6; /* Light blue background color */
+    font-family: 'Arial', sans-serif;
 }
-a {
-    color: rgb(227, 231, 41); /* Initial color */
-    transition: color 5.3s ease; /* Transition on color property, duration: 0.3s, easing: ease */
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center; /* Centers the nav items horizontally */
+    align-items: center; /* Centers the nav items vertically */
+    background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
 }
+
+nav ul {
+    list-style: none; /* Removes bullet points from the list */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Makes the list a flex container */
+}
+
+nav ul li {
+    margin: 0 15px; /* Adds horizontal spacing between nav items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Changes the text color */
+    padding: 10px 15px; /* Adds padding to the links */
+    transition: background-color 0.3s; /* Adds a transition effect */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Changes background color on hover */
+}
+
+/* Header Styles */
 header {
     color: rgb(13, 113, 10);
 }
-html {
-    background-color: rgb(8, 4, 4);
-}
-h1 {
-    border-style: dotted; border-end-end-radius: ;
-    text-align: center;
-    size: 200px;
-}
-h2{
-    text-align: center;
-    color: chartreuse;
 
+/* Heading Styles */
+h1 {
+    border-style: dotted;
+    text-align: center;
+    font-size: 2em;
 }
+
+h2 {
+    text-align: center;
+    color: #3498db;
+}
+
+/* Paragraph Styles */
+p {
+    color: #555;
+    font-size: 0.9em;
+    text-align: right;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Image Styles */
 img {
-    margin: o;
-    padding: o;
-    background-image: "For Linkedin";
+    margin: 0;
+    padding: 0;
     background-size: cover;
 }
-p {
-    text-align: right;
-    font-size: 50px;
-    font-family: 'Times New Roman';
-    font color: black;
+
+/* Link Styles */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #10cb52;
+    color: #6d2fcb;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
 }
+
+a:hover {
+    background-color: #2980b9;
+    color: red; /* Color change when hovered */
+    transition: color 0.3s ease; /* Transition on color property */
+}
+
+/* Button Styles */
 button {
     align-items: center;
     background-color: #3498db; /* Initial background color */
@@ -40,12 +92,13 @@ button {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    transition: background-color 4.3s ease; /* Transition on background-color property, duration: 0.3s, easing: ease */
+    transition: background-color 0.3s ease; /* Transition on background-color property */
 }
 
 button:hover {
     background-color: #e74c3c; /* Background color change when hovered */
 }
+
 .spin-button {
     padding: 10px 20px;
     background-color: #3498db;
@@ -81,6 +134,8 @@ button:hover {
         left: calc(100% - 50px); /* Move to the right edge of the container */
     }
 }
+
+/* Card Styles */
 .card {
     width: 300px;
     height: 400px;
@@ -102,35 +157,15 @@ button:hover {
     transform: translateY(0);
 }
 
-h2 {
-    color: #3498db;
-}
-
-p {
-    color: #555;
-}
-
-a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #10cb52;
-    color: #6d2fcb;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-}
-
-a:hover {
-    background-color: #2980b9;
-}
+/* Background Styles */
 .background {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #080505; /* Background color for the entire page */
+    background-color: #ADD8E6; /* Light blue background color */
 }
 
+/* Gradient Text Styles */
 .gradient-text {
     font-size: 3em;
     background: linear-gradient(to right, #050d12, #90a514); /* Gradient colors */
@@ -142,15 +177,28 @@ a:hover {
     transform: translate(-50%, -50%);
     z-index: 1; /* Set the z-index to position the text above the background */
 }
+
+/* Bounce Animation */
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Container Styles */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px;
 }
-
-
-
-
-
-
