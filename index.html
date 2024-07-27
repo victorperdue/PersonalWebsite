@@ -3,38 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victors Website</title>
+    <title>Victor's Website</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="javascript" href="index.jsx">
     <style>
-        html {
+        html, body {
             margin: 0;
             padding: 0;
             background: url('For linkedin.jpg') no-repeat center center fixed;
             background-size: cover;
+            font-family: Arial, sans-serif;
         }
+
+        /* Add your styles here */
     </style>
 </head>
 <body>
     <h1>Victor Perdue</h1>
     <header>
         <h2>Home</h2>
-        <p div class="p">
-            Coding wizard.
-        </p>
+        <p class="p">Coding wizard.</p>
     </header>
-        <script src="javascript.js"></script>
-    </div>
-   
-    <div class="runner"></div>
+
     <nav>
-        <ul>
+        <div class="burger-menu" id="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider round"></span>
+        </label>
+        <p>Dark Mode</p>
+    </div>
+
+    <button>Click me</button>
+
+    <script src="javascript.js"></script>
 </body>
-<button> click me</button>
 </html>
