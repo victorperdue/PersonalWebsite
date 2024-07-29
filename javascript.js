@@ -27,3 +27,4 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log("boom");
   console.log("there goes");
   console.log("boom");
+  console.log("there goes the");
