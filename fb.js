@@ -13,13 +13,32 @@
 
 // console.log(isPalindrome("545"));
 // console.log(isPalindrome("toby"));
- const car = {
+ const car1 = {
     color: "red",
-    year: 1999,
+    year: 1995,
     isFast: true
  };
-car.color= "blue";
- console.table(car);
+ 
+ const car2 = {
+    color: "blue",
+    year: 1996,
+    isFast: true
+ };
+
+ const {color, year, isFast} = car2
+
+ console.log(car2);
+ 
+// function printObj(obj) {
+//     for (const key in obj) {
+//         console.log(`key: ${key}, value: ${obj[key]}`);
+        
+//     }
+// } 
+
+// printObj(car);
+
+ 
  
  
 
